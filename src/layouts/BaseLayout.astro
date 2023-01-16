@@ -1,0 +1,29 @@
+---
+import Head from "./Head.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+const { title, description } = Astro.props;
+---
+
+<html lang="en">
+	<Head {title} {description} />
+	<body>
+		<div class="wrapper">
+			<Navbar />
+			<main>
+				<slot />
+			</main>
+			<Footer />
+		</div>
+
+		<script is:inline src="/js/test.js" type="module"></script>
+		<script>
+			console.log("Hello there")
+		</script>
+		<script>
+			import '../js/testing'
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,5 @@
+---
+const {text, link, style} = Astro.props;
+---
+
+<a href={link} class={style === "secondary" ? "btn btn--secondary" : "btn btn--primary"}>{text}</a>

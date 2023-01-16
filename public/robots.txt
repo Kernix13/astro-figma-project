@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /refer/
+Disallow: /search/ #block access to internal search result pages
+Disallow: /404-error/ #block access to 404 page
+Sitemap: https://example.com/sitemap-index.xml
